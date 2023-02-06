@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8" />
+        <title>
+            Selectors
+        </title>
+        <link rel="stylesheet"  href="selectors.css">
+    </head>
+
+    <body>
+      <div class="Selector"></div>
+        <h1>Selectors</h1>
+          <h2 class="title">1. Universal Selectors</h2>
+           <div class="content">
+            <p>The CSS universal selector <span class="symbol"> (*) </span>matches elements of any type.</p>
+            <p>The universal selector is a special type selector and can therefore be namespaced when using <code>@namespace.</code> 
+                This is useful when dealing with documents containing multiple namespaces such as HTML with inline SVG or MathML, or XML that mixes multiple vocabularies.
+            </p>
+            <div class="list">
+                <ul>
+                    <li>ns|* - matches all elements in namespace ns</li>
+                    <li>*|* - matches all elements</li>
+                    <li>|* - matches all elements without any declared namespace</li>
+                </ul>
+            </div>
+          </div><br><hr>
+
+           <h2 class="title">2. Type Selectors</h2>
+            <div class="content"> 
+             <p>The CSS type selector matches elements by <span class="symbol">node name</span>. In other words, it selects all elements of the given type within a document.</p>
+             <p>Type selectors can be namespaced when using <code>@namespace.</code> 
+                This is useful when dealing with documents containing multiple namespaces such as HTML with inline SVG or MathML, or XML that mixes multiple vocabularies.
+             </p>
+             <div class="list">
+                <ul>
+                    <li>ns|h1 - matches &lt;h1&gt; elements in namespace ns</li>
+                    <li>*|h1 - matches all &lt;h1&gt; elements</li>
+                    <li>|h1 - matches all &lt;h1&gt; elements without any declared namespace</li>
+                </ul>
+             </div>
+          </div><br><hr>
+
+         <h2 class="title">3. Class Selectors</h2>
+         <div class="content">
+            <p>The CSS class selector matches elements based on the contents of their <code class="symbol">class</code> attribute.</p> 
+            <h3>Example</h3>
+            <p class="background">This is the example for Class Selectors.</p>
+            <p class="text-shadow">This is the example for Class Selectors.</p>
+            <p class="color">This is the example for Class Selectors.</p>
+         </div><br><hr>
+
+        <h2 class="title">4. ID Selectors</h2>
+          <div class="content">
+            <p>The CSS ID selector matches an element based on the value of the element's <code class="symbol">id</code> attributes.
+               In order for the element to be selected, its id attribute must match exactly the value given in the selector.
+            </p>
+            <h3>Example</h3>
+            <p id="italic">This is an Example for ID selector</p>
+            <p id="bold">This is an Example for ID selector</p>
+          </div><br><hr>
+
+        <h2 class="title">5. Attribute Selectors</h2>
+        <div class="content">
+            <p>The CSS attribute selector matches elements based on the <span class="symbol">presence or value</span> of a given attribute.</p>
+           <ol>
+            <li><h4><kbd>[attr]</kbd></h4>
+            <p>Represents elements with an attribute name of attr.</p></li>
+            <li><h4><kbd>[attr=value]</kbd></h4>
+            <p>Represents elements with an attribute name of attr whose value is exactly value.</p>   </li>    
+            <li><h4><kbd>[attr~=value]</kbd></h4>
+            <p>Represents elements with an attribute name of attr whose value is a whitespace-separated list of words, one of which is exactly value.</p> </li>
+            <li><h4><kbd>[attr|=value]</kbd></h4>
+            <p>Represents elements with an attribute name of attr whose value can be exactly value or can begin with value immediately followed by a hyphen, - (U+002D). 
+                It is often used for language subcode matches.</p></li>
+            <li><h4><kbd>[attr^=value]</kbd></h4>
+            <p>Represents elements with an attribute name of attr whose value is prefixed (preceded) by value.</p></li>
+            <li><h4><kbd>[attr$=value]</kbd></h4>
+            <p>Represents elements with an attribute name of attr whose value is suffixed (followed) by value.</p></li>
+           <li><h4><kbd>[attr*=value]</kbd></h4>
+            <p>Represents elements with an attribute name of attr whose value contains at least one occurrence of value within the string.</p></li>
+           </ol>
+           <h3>Examples</h3>
+           <ul>
+            <li><a href="#internal">Internal link - example for attr</a></li>
+            <li><a href="http://example.com">Example link for attr=value</a></li>
+            <li><a href="#InSensitive">Insensitive internal link</a></li>
+           </ul>
+        </div><br><hr>
+
+        <h2 title="title">6. Descendant combinator</h2>
+        <div class="content">
+            <p>The descendant combinator — typically represented by a single space <span class="symbol">(" ")</span> character 
+                — combines two selectors such that elements matched by the second selector are selected if they have an ancestor (parent, parent's parent, parent's parent's parent, etc.) element matching the first selector. 
+                Selectors that utilize a descendant combinator are called descendant selectors.</p>
+            <h3>Example</h3>
+             <ul id="dc">
+                <li>
+                  <div>Item 1</div>
+                  <ul>
+                    <li>Subitem A</li>
+                    <li>Subitem B</li>
+                  </ul>
+                </li>
+             </ul>    
+        </div><br><hr>
+
+       <h2 class="title" >7. Child Combinator</h2>
+       <div class="content" >
+         <p>The child combinator <span class="symbol">(>)</span>  is placed between two CSS selectors. 
+            It matches only those elements matched by the second selector that are the direct children of elements matched by the first.</p>
+         <h3>Example</h3>
+         <div id="cc">
+            <span>Span #1, in the div.
+              <span>Span #2, in the span that's in the div.
+                <span>Span #3, in the span that's in the span that's in the div.</span>
+              </span>
+            </span>
+          </div>          
+       </div><br><hr>
+
+      <h2 class="title">8. General sibling combinator</h2> 
+      <div class="content">
+         <p>The general sibling combinator <span class="symbol"> (~) </span> separates two selectors and matches all iterations of the second element, 
+            that are following the first element (though not necessarily immediately), and are children of the same parent element.</p>
+           <h3>Example</h3>
+             <h1 style="font-size: 20px; text-align: left;" >Dream big</h1>
+             <span>And yet again this is a red span!</span> 
+             <p>Whatever it may be, keep smiling.</p>
+      </div><br><hr>
+
+     <h2 class="title">9. Adjacent sibling combinator</h2> 
+     <div class="content">
+        <p>
+            The adjacent sibling combinator (+) separates two selectors and matches the second element only if it immediately follows the first element, 
+            and both are children of the same parent element.</p>
+            <h3>Example</h3>
+                <p>I used every title "Example" as an example for this topic.</p>
+       </div>
+      </div>
+  </body>
+</html>
