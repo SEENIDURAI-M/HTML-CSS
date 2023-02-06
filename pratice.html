@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8" />
+
+    <!--base-->
+    <base href="https://www.example.com/" />
+    <base target="_blank" />
+    <base target="_top" href="https://example.com/" />
+
+    <title>My Pratice page</title>
+
+    <!--script, links-->
+    <script src="javascript.js"></script>
+    <link href="style.css" rel="stylesheet" >
+
+    <!--style-->
+    <style>
+        table,th,td{
+             border: 1px solid black;
+             border-collapse: collapse;
+        }
+    </style>
+  </head>
+  <body>
+    <h1>This Sample page</h1>
+
+   <!--abbr, title-->
+<p>You can use <abbr>CSS</abbr> (Cascading Style Sheets) to style your 
+    <abbr title="Hpertext Markup Language">HTML</abbr>.</p>
+
+<!--img,map,area,-->
+    <img src="workplace.jpg" alt="Image" usemap="#workmap" width="400" height="379">
+    <map name="workmap">
+      <area shape="rect" coords="34,44,270,350" alt="Computer" href="computer.htm">
+      <area shape="rect" coords="290,172,333,250" alt="Phone" href="phone.htm">
+      <area shape="circle" coords="337,300,44" alt="Cup of coffee" href="coffee.htm">
+    </map> 
+
+<!--article-->
+    <article>
+        <h2>Mozilla Firefox</h2>
+        <p>Mozilla Firefox is an open-source web browser developed by Mozilla. Firefox has been the second most popular web browser since January, 2018.</p>
+    </article>
+
+<!--aside-->
+    <aside>
+        <h4>Epcot Center</h4>
+        <p>Epcot is a theme park at Walt Disney World Resort featuring exciting attractions, international pavilions, award-winning fireworks and seasonal special events.</p>
+    </aside>
+
+<!--figure, figcaption, audio-->
+    <figure>
+        <figcaption>Listen to the T-Rex:</figcaption>
+        <audio
+            controls
+            src="/media/cc0-audio/t-rex-roar.mp3">
+                <a href="/media/cc0-audio/t-rex-roar.mp3">
+                    Download audio
+                </a>
+        </audio>
+    </figure>
+
+<!--bdi, bdo, class-->
+<p><bdi class="name">Franois fatale</bdi>: 2nd place</p>
+<p><bdo dir="rtl">This paragraph will go right-to-left.</bdo></p>
+
+<!--blockquote, cite, q-->
+<blockquote>
+    <p>It was a bright cold day in April, and the clocks were striking thirteen.</p>
+</blockquote>
+    <p><cite><a href="http://www.george-orwell.org/1984/0.html">Nineteen Eighty-Four</a></cite></p>
+    <p>WWF's goal is to:
+        <q>Build a future where people live in harmony with nature.</q>
+        We hope they succeed.</p> 
+
+<!--del, ins-->
+    <p>There is <del>nothing</del> <ins>no code</ins> either good or bad, but <del>thinking</del> <ins>running it</ins> makes it so.</p>
+  
+<!--picture, source,img-->
+    <picture>
+        <source srcset="/media/cc0-images/surfer-240-200.jpg"
+                media="(orientation: portrait)">
+        <img src="/media/cc0-images/painted-hand-298-332.jpg" alt="">
+    </picture>
+
+<!--form, lable, select, optgroup, option, input, br, hr-->
+<form>
+  <label for="cars">Choose a car:</label>
+  <select name="cars" id="cars">
+    <optgroup label="Swedish Cars">
+      <option value="volvo">Volvo</option>
+      <option value="saab">Saab</option>
+    </optgroup>
+    <optgroup label="German Cars">
+      <option value="mercedes">Mercedes</option>
+      <option value="audi">Audi</option>
+    </optgroup>
+  </select>
+  <br><br>
+  <input type="submit" value="Submit">
+</form>
+<hr>
+
+<!--feildset,legent, lable-->
+<fieldset>
+    <legend>Choose your favorite food</legend>
+
+    <input type="radio"name="food" value="B">
+    <label >Briyani</label><br>
+
+    <input type="radio"  name="food" value="F">
+    <label >Fried rice</label><br>
+
+    <input type="radio" name="food" value="G" />
+    <label >Grill</label>
+</fieldset>    
+  
+<!--table - header,footer,body-->
+<table>
+    <thead>
+        <tr>
+            <th>Items</th>
+            <th scope="col">Expenditure</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <th scope="row">Donuts</th>
+            <td>3,000</td>
+        </tr>
+        <tr>
+            <th scope="row">Stationery</th>
+            <td>18,000</td>
+        </tr>
+    </tbody>
+    <tfoot>
+        <tr>
+            <th scope="row">Totals</th>
+            <td>21,000</td>
+        </tr>
+    </tfoot>
+</table>
+
+<!--ordered list-->   
+<ol>
+    <li>Milk</li>
+    <li>Cheese</li>
+    <li>butter</li>
+    <li>curd</li>
+</ol>
+<p>The volume of a box is <var>l</var> × <var>w</var> × <var>h</var>, where <var>l</var> represents the length, <var>w</var> the width and <var>h</var> the height of the box.</p>
+
+<!--iframe-->
+<iframe id="inlineFrameExample" title="Inline Frame Example"  width="500"  height="300"
+src="https://www.openstreetmap.org/export/embed.html?bbox=-0.004017949104309083%2C51.47612752641776%2C0.00030577182769775396%2C51.478569861898606&layer=mapnik">
+</iframe>
+
+<p>You can reach Michael at:</p>
+<!--a, ul, li-->
+<ul>
+  <li><a href="https://example.com">Website</a></li>
+  <li><a href="mailto:m.bluth@example.com">Email</a></li>
+  <li><a href="tel:+123456789">Phone</a></li>
+</ul>
+
+
+<!--address-->
+    <p>Contact the author of this page:</p>
+    <address>
+      <a href="mailto:seeni@msd.com">seeni@msd.com</a><br>
+      <a href="tel:+919876543210">9876543210</a>
+    </address>  
+   </body>
+</html>

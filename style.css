@@ -1,0 +1,42 @@
+html{
+   background-color: cyan;
+}
+ul.font-style,
+span.font-style{
+    background-color: #2ecc71;
+}
+h2 + p {
+    font-size: 200%;
+  }
+a:link {
+    color: pink;
+  }
+  
+  a:visited {
+    color: green;
+  }
+  a:hover {
+    text-decoration:wavy;
+  }
+   address p span.font-style {
+    color: yellow;
+    background-color: black;
+    padding: 5px;
+  }
+  .quality{
+    color: blue;
+  }
+  h2+p{
+    color:blanchedalmond;
+  }
+  .language{
+    padding: 10px;
+    text-align: left;
+    width: calc(90% - 30);
+    background-color: rebeccapurple;
+    transform:none;
+    color: white;
+  }
+  .container {
+    display: flex; /* or inline-flex */
+  }
