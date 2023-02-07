@@ -1,0 +1,15 @@
+*{
+    padding: 20px;
+}
+img{
+    width:fit-content;
+    height: 400;
+}
+#content_1{
+    column-count: 4;
+    column-width: 13px;
+    column-gap: 10px;
+}
+#content_2{
+    columns: 3 15px;
+}
