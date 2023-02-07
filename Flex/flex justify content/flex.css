@@ -1,0 +1,34 @@
+.flex-container{
+    border: 5px solid black;
+    padding: 10px;
+    display: flex;
+}
+.flex-item{
+    padding: 30px;
+    border: 5px solid green;
+    margin: 10px;
+    font-size: medium;
+    font-weight: bold;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+/* flex */
+.flex-end{
+    justify-content: flex-end;
+}
+.left{
+    justify-content: left;
+}
+.center{
+    justify-content: center;
+}
+.space-between{
+    justify-content: space-between;
+}
+.space-evenly{
+    justify-content: space-evenly;
+}
+.space-around{
+    justify-around: .space-around
+}
+
