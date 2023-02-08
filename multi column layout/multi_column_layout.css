@@ -1,9 +1,16 @@
 *{
     padding: 20px;
+   
+}
+p{
+    font-size: 20px;    
+}
+h1{
+    font-size: 30px;
 }
 img{
-    width:fit-content;
-    height: 400;
+    width:1000px;
+    height: 600px;
 }
 #content_1{
     column-count: 4;
@@ -12,4 +19,9 @@ img{
 }
 #content_2{
     columns: 3 15px;
+}
+.news{
+    border: 5px solid black;
+    width: 1050px;
+    flex-wrap: wrap;
 }
