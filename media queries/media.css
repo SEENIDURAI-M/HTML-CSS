@@ -1,0 +1,117 @@
+.container
+{
+     display: flex;
+     flex-direction: column;
+     align-items: stretch;
+     background: linear-gradient(to bottom,black,rgb(233, 245, 233));
+     background-repeat:no-repeat ;
+     gap: 25px;
+     padding: 10px;
+    
+}
+
+  .container1
+{
+   display: flex;
+  min-height: 1;
+
+}
+
+.box1
+{ 
+    min-width: 300px;
+    max-width: 300px;
+}
+
+.ronaldo{
+    font-size: 24px;
+    background-color: mistyrose;
+    border: 2px solid rgb(3, 0, 0);
+    padding:5px;
+    width: 400px; 
+    height: 900px;
+    flex-shrink: 0;
+
+} 
+
+.harry{
+    font-size: 24px;
+    align-items: flex-start;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: aquamarine;
+    color: blue;
+   
+    padding: 10px;
+    padding-right: 10px;
+    border: 1px solid rgb(3, 3, 3);
+    height: 600px;
+    
+} 
+
+@media all and (max-width:700px)
+{
+    .container
+    {
+        width:100%;
+        height:100%;
+    }
+
+    .ronaldo{
+        background-color: brown;
+    }
+    .harry
+    {
+        background-color: rgb(165, 42, 69);
+        height: 900px;
+      
+    }
+}
+@media all and(min-width:480px)
+{
+    .harry{
+        height: 1000px;
+    }
+
+}
+@media (max-width:700px) {
+    /* when hover is supported */
+    h3:hover {
+        color: white;
+        background: black;
+      }
+  }
+
+ 
+@media print
+{
+    body {
+        background-color: black;
+    }
+}
+
+@media (orientation:portrait)
+{
+    body{
+    flex-direction: column;
+    background-color: rgb(15, 177, 15);
+     }
+}
+.animation {
+    animation: vibrate 0.3s linear infinite both;
+  }
+  
+  @media (prefers-reduced-motion: reduce) {
+    .harry {
+      animation: none;
+    }
+  }
+  @media screen and (-ms-high-contrast: black-on-white) {
+    .harry {
+      background-image: url("image-bw.png");
+    }
+  }
+  @media screen and (-ms-high-contrast: white-on-black) {
+    .ronaldo {
+      background-image: url("image-wb.png");
+    }
+  }
